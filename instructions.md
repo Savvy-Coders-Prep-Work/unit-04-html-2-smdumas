@@ -23,7 +23,7 @@ Create a web page that contains a form with the following fields:
 
 Apply the following requirements to the form:
 
-1. Add appropriate labels for each form element.
+1. **Add appropriate labels for each form element.**
 2. Use placeholders for the username field and provide the text "Enter your username".
 3. Add validation to the form fields as follows:
    - The username field is required.

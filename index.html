@@ -7,21 +7,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
-    <input type="submit">
- <form> 
-    <label for="UserID"> 
-        
-    </label>
-    <input type="text">
 
- </form>
+  
+<form action="/submit-form" method="post>"
+    <!--forn fields -->
+    <script defer src="script.js"></script>
+       
+    
+ 
+ <label for="USERName">Enter USERName:</label><br>
+<input type="text" id="USERName" =Enter your "USERName" required>
+<input type="submit"text="submit
+"><br>
+
+
+<script>
+    function handleformsubmit(event){
+    event.preventdefault();
+    UserName
+    var name = document.forms['myform']["UserName"].value;
+}
+</script>
+
+<form name="myForm" onsubmit="handleformsubmit(event0)"
+
+
+<p id="errormessage" hidden></p>
+
+<label for="FRUIT":</label><br>
+<input type="checkbox" id="Fruit" name="Apple" value="Apple">
+  <label for="Fruit"> Apple</label><br>
+
+  <input type="checkbox" id="Fruit" name="Banana" value="Banana">
+  <label for="Fruit"> Banana</label><br>
+
+  <input type="checkbox" id="Friuit" name="Orange" value="Orange">
+  <label for="Checkbox">Orange</label><br>
+
+  <input type="submit"><br>
+
+
+<label for="Gender":<label><br>
+  <input type="radio" id="Male" name="fav_language" value="Male">
+  <label for="Male">Male</label><br>
+
+  <input type="radio" id="Female" name="fav_language" value="Female">
+  <label for="Female">Female</label><br>
+
+  <input type="radio" id="OTHER" name="fav_language" value="OTHER">
+  <label for="OTHER">OTHER</label><br>
+
+  <input type="submit"><br>
+
+
+<label for="Country":<label><br>  
+  <label for="Country">Select one Country required:</label>
+  <select id="Country" name="Country">
+    <option value="USA">USA</option>
+    <option value="Canada">Canda</option>
+    <option value="UK" selected>UK</option>
+    </select>
+  <input type="submit">
+
+</form>
+
 
  
 </body>
 </html>
-
