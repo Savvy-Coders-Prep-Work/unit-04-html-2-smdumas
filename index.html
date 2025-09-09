@@ -16,32 +16,22 @@
 <body>
 
   
-<form action="/submit-form" method="post>"
-    <!--forn fields -->
-    <script defer src="script.js"></script>
+<form method="post"name="myForm" onsubmit="handleformsubmit(event)">
+    <!--form fields -->
        
     
  
- <label for="USERName">Enter USERName:</label><br>
-<input type="text" id="USERName" =Enter your "USERName" required>
-<input type="submit"text="submit
-"><br>
+ <label for="UserName">Enter UserName:</label><br>
+ <input type="text" id="UserName" placeholder="Enter your UserName" required><br>
 
 
-<script>
-    function handleformsubmit(event){
-    event.preventdefault();
-    UserName
-    var name = document.forms['myform']["UserName"].value;
-}
-</script>
-
-<form name="myForm" onsubmit="handleformsubmit(event0)"
 
 
-<p id="errormessage" hidden></p>
 
-<label for="FRUIT":</label><br>
+<p>Fruit</p>
+
+
+
 <input type="checkbox" id="Fruit" name="Apple" value="Apple">
   <label for="Fruit"> Apple</label><br>
 
@@ -51,33 +41,45 @@
   <input type="checkbox" id="Friuit" name="Orange" value="Orange">
   <label for="Checkbox">Orange</label><br>
 
-  <input type="submit"><br>
+<br>
 
+<p>Gender</p>
 
-<label for="Gender":<label><br>
-  <input type="radio" id="Male" name="fav_language" value="Male">
+  <input type="radio" id="Male" name="Gender" value="Male">
   <label for="Male">Male</label><br>
 
-  <input type="radio" id="Female" name="fav_language" value="Female">
+  <input type="radio" id="Female" name="Gender" value="Female">
   <label for="Female">Female</label><br>
 
-  <input type="radio" id="OTHER" name="fav_language" value="OTHER">
+  <input type="radio" id="OTHER" name="Gender" value="OTHER">
   <label for="OTHER">OTHER</label><br>
 
-  <input type="submit"><br>
+  <br>
 
 
-<label for="Country":<label><br>  
+  <p>Country</p>
   <label for="Country">Select one Country required:</label>
   <select id="Country" name="Country">
     <option value="USA">USA</option>
     <option value="Canada">Canda</option>
     <option value="UK" selected>UK</option>
-    </select>
-  <input type="submit">
-
+    </select><br>
+ 
+  <input type="submit"value="submit">
+  
 </form>
 
+<script>
+  function handleformsubmit(event){
+  event.preventdefault();
+  
+  var name = document.forms['myForm']["UserName"].value;
+  var name = document.forms['myForm']["Gender"].value;
+  var name = document.forms['myForm']["Country"].value;
+  alert("Form submitted!");
+   
+ }
+</script>
 
  
 </body>
