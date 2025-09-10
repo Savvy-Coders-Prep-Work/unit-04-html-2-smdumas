@@ -2,3 +2,85 @@
 <!-- Remember to start by typing a single exclamation point (!) and then hitting enter or selecting the first dropdown option.-->
 <!-- This will give you the basic, necessary skeletal elements of a webpage so you can begin coding to our specific requirements! -->
 <!-- Good luck! You've got this! -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+  
+<form method="post"name="myForm" onsubmit="handleformsubmit(event)">
+    <!--form fields -->
+       
+    
+ 
+ <label for="UserName">Enter UserName:</label><br>
+ <input type="text" id="UserName" placeholder="Enter your UserName" required><br>
+
+
+
+
+
+<p>Fruit</p>
+
+
+
+<input type="checkbox" id="Fruit" name="Apple" value="Apple">
+  <label for="Fruit"> Apple</label><br>
+
+  <input type="checkbox" id="Fruit" name="Banana" value="Banana">
+  <label for="Fruit"> Banana</label><br>
+
+  <input type="checkbox" id="Friuit" name="Orange" value="Orange">
+  <label for="Checkbox">Orange</label><br>
+
+<br>
+
+<p>Gender</p>
+
+  <input type="radio" id="Male" name="Gender" value="Male">
+  <label for="Male">Male</label><br>
+
+  <input type="radio" id="Female" name="Gender" value="Female">
+  <label for="Female">Female</label><br>
+
+  <input type="radio" id="OTHER" name="Gender" value="OTHER">
+  <label for="OTHER">OTHER</label><br>
+
+  <br>
+
+
+  <p>Country</p>
+  <label for="Country">Select one Country required:</label>
+  <select id="Country" name="Country">
+    <option value="USA">USA</option>
+    <option value="Canada">Canda</option>
+    <option value="UK" selected>UK</option>
+    </select><br>
+ 
+  <input type="submit"value="submit">
+  
+</form>
+
+<script>
+  function handleformsubmit(event){
+  event.preventdefault();
+  
+  var UserName = document.forms['myForm']["UserName"].value;
+  var Gender = document.forms['myForm']["Gender"].value;
+  var Country = document.forms['myForm']["Country"].value;
+  alert("Form submitted!");
+ 
+ }
+</script>
+
+ 
+</body>
+</html>
